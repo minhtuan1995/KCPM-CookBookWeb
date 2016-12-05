@@ -2562,7 +2562,8 @@ button:focus {
     .ui-social-twitter .icon {
       background-image: url("../img/icons/twitter.icon.12.2x.png"); } }
 
-.ui-social-facebook .icon {
+.ui-social-
+ .icon {
   background-size: 100%;
   background-image: url("../img/icons/facebook.icon.12.png"); }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2) {
