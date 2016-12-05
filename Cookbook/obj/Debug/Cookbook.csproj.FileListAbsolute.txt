@@ -14,7 +14,6 @@ C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbo
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\Microsoft.Data.Edm.dll
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\Microsoft.Data.OData.dll
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\Microsoft.Web.WebPages.OAuth.dll
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\Newtonsoft.Json.dll
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\System.Net.Http.Formatting.dll
@@ -37,7 +36,6 @@ C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbo
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\EntityFramework.xml
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\Newtonsoft.Json.xml
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\System.Net.Http.Formatting.xml
-C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\System.Web.Helpers.xml
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\System.Web.Http.xml
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\System.Web.Http.WebHost.xml
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\System.Web.Mvc.xml
@@ -89,3 +87,6 @@ C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbo
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\obj\Debug\Cookbook.csprojResolveAssemblyReference.cache
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\obj\Debug\Cookbook.dll
 C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\obj\Debug\Cookbook.pdb
+C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\System.Web.Helpers.xml
+C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\WebMatrix.Data.dll
+C:\Users\MT\Desktop\Cookbook-KCPM-master\Source\Cookbook\KCPM-CookBookWeb\Cookbook\bin\WebMatrix.Data.xml
