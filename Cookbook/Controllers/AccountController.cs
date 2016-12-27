@@ -45,7 +45,6 @@ namespace Cookbook.Controllers
             try
             {
                 var json = client.DownloadString(String.Format("http://kcpm-cookbookserver.apphb.com/api/NguoiDung/Get/{0}", id));
-                json = System.Text.Encoding.Unicode.GetString(System.Text.Encoding.Convert(System.Text.Encoding.UTF8, System.Text.Encoding.Unicode, System.Text.Encoding.Default.GetBytes(json)));
                 var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
                 dynamic model = serializer.Deserialize<dynamic>(json);
 
