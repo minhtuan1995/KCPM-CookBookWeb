@@ -28,7 +28,7 @@ namespace Cookbook.Controllers
         public ActionResult FacebookLogin(string token)
         {
             WebClient client = new WebClient();
-            client.Encoding = System.Text.Encoding.UTF8;
+           // client.Encoding = System.Text.Encoding.Unicode;
             //string JsonResult = client.DownloadString(string.Concat("https://graph.facebook.com/me?access_token=", token));
             string JsonResult = client.DownloadString(string.Concat("https://graph.facebook.com/me?access_token=", token, "&fields=first_name,last_name"));
             //JsonResult = System.Text.Encoding.Unicode.GetString(System.Text.Encoding.Convert(System.Text.Encoding.UTF8, System.Text.Encoding.Unicode, System.Text.Encoding.Default.GetBytes(JsonResult)));
@@ -48,9 +48,10 @@ namespace Cookbook.Controllers
                 var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
                 dynamic model = serializer.Deserialize<dynamic>(json);
 
+                
                 Session["Avatar"] = Convert.ToString(model["Hinh"]);
-                Session["Ho"] = Convert.ToString(model["Ho"]);
-                Session["Ten"] = Convert.ToString(model["Ten"]);
+                Session["Ho"] = System.Text.Encoding.Unicode.GetString(System.Text.Encoding.Convert(System.Text.Encoding.UTF8, System.Text.Encoding.Unicode, System.Text.Encoding.Default.GetBytes(model["Ho"])));
+                Session["Ten"] = System.Text.Encoding.Unicode.GetString(System.Text.Encoding.Convert(System.Text.Encoding.UTF8, System.Text.Encoding.Unicode, System.Text.Encoding.Default.GetBytes(model["Ten"])));
             }
             catch
             {
