@@ -12,9 +12,9 @@
                 url: "http://kcpm-cookbookserver.apphb.com/api/NguoiDung",
                 data: JSON.stringify({
                     MaNguoiDung: '@HttpContext.Current.User.Identity.Name',
-                    Ho: '@Session["Ho"].ToString()',
-                    Ten: '@Session["Ten"].ToString()',
-                    Hinh: '@Session["Avatar"].ToString()',
+                    Ho: '@Session["Ho"]',
+                    Ten: '@Session["Ten"]',
+                    Hinh: '@Session["Avatar"]',
                     DiaChi: 'Vietnam'
                 }),
                 contentType: "application/json; charset=utf-8",
@@ -31,6 +31,7 @@
         using (var client = new System.Net.WebClient())
         {
             var json = client.DownloadString(String.Format("http://kcpm-cookbookserver.apphb.com/api/NguoiDung/Get/{0}", @HttpContext.Current.User.Identity.Name));
+            json = System.Text.Encoding.Unicode.GetString(System.Text.Encoding.Convert(System.Text.Encoding.UTF8, System.Text.Encoding.Unicode, System.Text.Encoding.Default.GetBytes(json)));
             var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
             dynamic model = serializer.Deserialize<dynamic>(json);
 

@@ -28,8 +28,10 @@ namespace Cookbook.Controllers
         public ActionResult FacebookLogin(string token)
         {
             WebClient client = new WebClient();
+            client.Encoding = System.Text.Encoding.UTF8;
             //string JsonResult = client.DownloadString(string.Concat("https://graph.facebook.com/me?access_token=", token));
             string JsonResult = client.DownloadString(string.Concat("https://graph.facebook.com/me?access_token=", token, "&fields=first_name,last_name"));
+            //JsonResult = System.Text.Encoding.Unicode.GetString(System.Text.Encoding.Convert(System.Text.Encoding.UTF8, System.Text.Encoding.Unicode, System.Text.Encoding.Default.GetBytes(JsonResult)));
             JObject jsonUserInfo = JObject.Parse(JsonResult);
 
             Session["Ten"] = jsonUserInfo.Value<string>("first_name");
@@ -43,6 +45,7 @@ namespace Cookbook.Controllers
             try
             {
                 var json = client.DownloadString(String.Format("http://kcpm-cookbookserver.apphb.com/api/NguoiDung/Get/{0}", id));
+                json = System.Text.Encoding.Unicode.GetString(System.Text.Encoding.Convert(System.Text.Encoding.UTF8, System.Text.Encoding.Unicode, System.Text.Encoding.Default.GetBytes(json)));
                 var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
                 dynamic model = serializer.Deserialize<dynamic>(json);
 
